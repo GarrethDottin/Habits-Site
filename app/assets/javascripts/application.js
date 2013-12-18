@@ -16,5 +16,8 @@
 //= require twitter/bootstrap
 
 $(function(){
-  /* Your JavaScript goes here... */
+ // var panel = $('#panel2');
+ //    panel.click(function() {
+ //        $.scrollTo(panel, 800);
+ //    });
 });

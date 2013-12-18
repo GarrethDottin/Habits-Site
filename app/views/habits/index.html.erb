@@ -1,22 +1,83 @@
-<div id ="container">
 <div id ="panel1">
-<%= image_tag("habits.jpg") %>
-</div>
-<div id = "panel2">
-  <span class="glyphicon glyphicon-chevron-up"></span>
-</div>
-</div>
+  <%= image_tag("habits.jpg") %>
+  <h1> <span>  The Power of Habits: </span> </h1>
+  <h2>  <span>  How can habits stop protests in Iraq <br/>and change your lifestyle? </span></h2>
+<button id="button" type="button">Begin</button>
 
+</div>
+<div id="panel2"
+
+</div>
 <style>
-  #panel2 {
-    background-color: beige;
-    height: 100px;
-
-
+  #panel1{
+    position: relative;
+    width: 100%;
   }
 
+  h1 {
+    position: absolute;
+    text-align: left;
+    top: 100px;
+    }
+  h1 span {
+    color: white;
+    font: bold 110px/125px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+
+  }
+  img {
+    width: 100%;
+    height: 1600px;
+  }
+  h2 {
+    position: absolute;
+    text-align: right;
+    bottom: 200px;
+    width: 100%;
+}
+
+  h2 span {
+    color: white;
+    font: bold 90px/125px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+#button {
+    padding: 15px 20px;
+    left: 45%;
+    position: absolute;
+    bottom: -25px;
+    background: #34495e;
+    border-radius: 10px;
+    height: 150px;
+    width: 350px;
+    margin-left: 45px;
+    margin-top: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 10;
+}
+
+#panel2{
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+    z-index: 0;
+
+}
 
 </style>
-
-
-
