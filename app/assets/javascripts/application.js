@@ -16,5 +16,8 @@
 //= require twitter/bootstrap
 
 $(function(){
-  /* Your JavaScript goes here... */
+  var button = $('#button');
+  var breakpanel = $('#breakpanel')
+    button.click(function() {
+     $.scrollTo(breakpanel, 800)});
 });
