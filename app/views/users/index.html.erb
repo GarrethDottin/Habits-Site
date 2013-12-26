@@ -38,9 +38,14 @@
 <div id="panel6">
     <h3 id="Act1"> Act III. </h3>
   <br>
+  <%= @first_Story.username %> <br>
+  <%= @first_Story.habit %> <br>
+  <%= @second_Story.username %> <br>
+  <%= @second_Story.habit %> <br>
+  <%= @third_Story.username %> <br>
+  <%= @third_Story.habit %>
  <%= form_for @habit do |f|  %>
     <%= f.text_field :username %>
-    <%= f.file_field :profile %>
     <%= f.text_field :habit %>
     <%= f.submit "Create" %>
   <% end %>
