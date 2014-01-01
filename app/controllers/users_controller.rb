@@ -11,9 +11,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      render
+      redirect_to :back
     end
-    redirect_to :back
   end
 
 end

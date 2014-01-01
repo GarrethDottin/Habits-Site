@@ -1,43 +1,49 @@
-<div id ="panel1">
+<div id ="panel1" class="panel">
   <%= image_tag("habits.jpg") %>
-  <h1 id="websitetitle"> <span id="title">  The Power of Habits: </span> </h1>
+  <% stylesheet_link_tag "structure.css" %>
+  <h1 id="websitetitle" class="websitetitle"> <span id="title">  The Power of Habits: </span> </h1>
   <h2>  <span>  How can changing a habit stop protests<br/> in Iraq and change your lifestyle? </span></h2>
   <button id="button" type="button">Begin</button>
 </div>
-<div id="breakpanel">
-  <h3 id="prologue"> Prologue: </h3>
+
+<div id="breakpanel" class="prologue-panel">
+  <h3 id="prologue" class="titlepanel"> Prologue: </h3>
 </div>
-<div id="panel2">
+
+<div id="panel2" class="story-panel">
   <img id="CartoonGeneral" src="/assets/cartoonGeneral.jpg">
   <div id="quotediv">
-    <h1 id="quote"><span id="spanquote"> In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
+    <h1 id="quote" class="right-display-box"><span id="spanquote"> In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
     </span> </h1>
   </div>
-  <div id="panel2caption">
-    <h1 id="panel2text"><span id="textspan"> Step 1. Be Honest about the Current State of the Habit </span> </h1>
+  <div id="panel2caption" class = "panelcaption">
+    <h1 id="panel2text" class="paneltext"><span id="textspan"> Step 1. Be Honest about the Current State of the Habit </span> </h1>
+  </div>
 </div>
-</div>
-<div id="panel3">
+
+<div id="panel3" class="story-panel">
   <img id="habitloop" src="/assets/habitloops.png">
-  <div id="panel3caption">
-    <h1 id="panel3text"><span id="text2span">  Before you can change the world or change your life you have to understand three simple things</span> </h1>
+  <div id="panel3caption" class="panelcaption">
+    <h1 id="panel3text" class="paneltext"><span id="text2span">  Before you can change the world or change your life you have to understand three simple things</span> </h1>
   </div>
 </div>
-<div id="panel4">
+<div id="panel4" class="story-panel">
   <h3 id="Act1"> Act I. </h3>
-  <div id="panel4caption">
-    <h1 id="panel4text"><span id="text3span"> Step 2. Mess with the reward, to understand the why</span> </h1>
+  <div id="panel4caption" class="panelcaption">
+    <h1 id="panel4text" class="paneltext"><span id="text3span"> Step 2. Mess with the reward, to understand the why</span> </h1>
   </div>
 </div>
-<div id="panel5">
+
+<div id="panel5" class="story-panel">
   <h3 id="Act1"> Act II. </h3>
-  <div id="panel5caption">
-    <h1 id="panel5text"><span id="text4span"> Step 3. Find one Cue you think is triggering the behavior</span> </h1>
+  <div id="panel5caption" class="panelcaption">
+    <h1 id="panel5text" class="paneltext"><span id="text4span"> Step 3. Find one Cue you think is triggering the behavior</span>
+    </h1>
   </div>
 </div>
-<div id="panel6">
-    <h3 id="Act1"> Act III. </h3>
-  <br>
+
+<div id="panel6" class="story-panel">
+  <h3 id="Act1"> Act III. </h3> <br>
   <%= @first_Story.username %> <br>
   <%= @first_Story.habit %> <br>
   <%= @second_Story.username %> <br>
@@ -49,8 +55,8 @@
     <%= f.text_field :habit %>
     <%= f.submit "Create" %>
   <% end %>
-  <div id="panel6caption">
-    <h1 id="panel6text"><span id="text5span"> Step 4. Put your plan into action</span> </h1>
+  <div id="panel6caption" class="panelcaption">
+    <h1 id="panel6text" class="paneltext"><span id="text5span"> Step 4. Put your plan into action</span> </h1>
   </div>
 </div>
 
@@ -58,17 +64,6 @@
 
 
 <style>
-#websitetitle {
-    position: absolute;
-    top: 150px;
-    left: 5px;
-}
-  #panel1{
-    position: relative;
-    width: 100%;
-    height: 1980px;
-  }
-
   h1 {
     position: absolute;
     text-align: left;
@@ -77,31 +72,12 @@
   #title {
     color: white;
     font: bold 110px/125px Helvetica, Sans-Serif;
-    letter-spacing: -1px;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
   }
 
-  img {
-    width: 100%;
-    height: 2000px;
-  }
-  h2 {
-    position: absolute;
-    text-align: right;
-    bottom: 200px;
-    width: 100%;
-}
 
-  h2 span {
-    color: white;
-    font: bold 90px/125px Helvetica, Sans-Serif;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-}
 #button {
   padding: 15px 20px;
   left: 45%;
@@ -125,8 +101,6 @@
   z-index: 10;
 }
 #breakpanel{
-  width: 100%;
-  height: 500px;
   background-color: black;
   opacity: .90;
 }
@@ -143,14 +117,6 @@
   background-color: black;
 }
 
-#panel2 {
-  width: 100%;
-  position: relative;
-  width: 100%;
-  height: 2000px;
-  background-color: #EDE9DC;
-  z-index: 0;
-}
 #prologue{
   position: relative;
   top: 180px;
@@ -168,44 +134,19 @@
   font: 120px 'BazarMedium';
   letter-spacing: 10px;
   text-align: center;
-}
-#quotediv {
-  position: absolute;
   background-color: #393D49;
-  border-radius: 25px;
-  text-align: center;
-  top: 80px;
-  right: 100px;
-  width: 1700px;
-  height: 1200px;
 }
+
 #panel2text{
   color: white;
-  width: 100%;
   font: bold 110px/165px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;;
 }
 #textspan {
   text-align: left;
   }
 
-#panel2caption {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  z-index: 10;
-  }
-#panel3 {
-  top: 80px;
-  width: 100%;
-  height: 1800px;
-  background-color: #EDE9DC;
-  position: relative;
-}
 #habitloop{
   position: relative;
   top: 250px;
@@ -213,25 +154,15 @@
 }
 #panel3text{
   color: white;
-  position: relative;
-  width: 100%;
-  font: bold 110px/165px Helvetica, Sans-Serif;
   letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;;
 }
 #text2span {
   text-align: left;
+  height: 205px;
   }
 
-#panel3caption {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  z-index: 10;
-  }
 #Act1 {
   position: absolute;
   top: 250px;
@@ -240,86 +171,35 @@
   font-style: italic;
   color:#3498db;
 }
-#panel4 {
-  width: 100%;
-  height: 1800px;
-  background-color: #EDE9DC;
-  position: relative;
 
-}
 #panel4text{
   color: white;
-  position: relative;
-  width: 100%;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
+  font: bold 110px/165px Hel  vetica, Sans-Serif;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;;
 }
 #text3span {
   text-align: left;
   }
 
-#panel4caption {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  }
-#panel5 {
-  top: 80px;
-  width: 100%;
-  height: 1800px;
-  background-color: #EDE9DC;
-  position: relative;
-}
 #panel5text{
   color: white;
-  position: relative;
-  width: 100%;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;;
 }
 #text4span {
   text-align: left;
   }
 
-#panel5caption {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  }
-#panel6 {
-  top: 150px;
-  width: 100%;
-  height: 1800px;
-  background-color: #EDE9DC;
-  position: relative;
-}
 #panel6text{
   color: white;
-  position: relative;
-  width: 100%;
   font: bold 110px/165px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;;
 }
+
 #text5span {
   text-align: left;
-  }
-
-#panel6caption {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  height: 300px;
   }
 
 </style>
