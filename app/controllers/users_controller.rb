@@ -10,8 +10,11 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
+    respond_to do |format|
     if @user.save
-      redirect_to :back
+        format.html { redirect_to(@user, :notice => 'Post created.') }
+        format.js
+    end
     end
   end
 

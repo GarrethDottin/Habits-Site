@@ -1,8 +1,8 @@
 <div id ="panel1" class="panel">
   <%= image_tag("habits.jpg") %>
   <% stylesheet_link_tag "structure.css" %>
-  <h1 id="websitetitle" class="websitetitle"> <span id="title">  The Power of Habits: </span> </h1>
-  <h2>  <span>  How can changing a habit stop protests<br/> in Iraq and change your lifestyle? </span></h2>
+  <% stylesheet_link_tag "style.css" %>  <h1 id="websitetitle" class="websitetitle"> <span id="title">  The Power of Habits: </span> </h1>
+  <h2>  <span id="caption">  How can changing a habit stop protests<br/> in Iraq and change your lifestyle? </span></h2>
   <button id="button" type="button">Begin</button>
 </div>
 
@@ -13,8 +13,8 @@
 <div id="panel2" class="story-panel">
   <img id="CartoonGeneral" src="/assets/cartoonGeneral.jpg">
   <div id="quotediv">
-    <h1 id="quote" class="right-display-box"><span id="spanquote"> In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
-    </span> </h1>
+    <h1 id="quote" class="right-display-box">In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
+     </h1>
   </div>
   <div id="panel2caption" class = "panelcaption">
     <h1 id="panel2text" class="paneltext"><span id="textspan"> Step 1. Be Honest about the Current State of the Habit </span> </h1>
@@ -29,6 +29,7 @@
 </div>
 <div id="panel4" class="story-panel">
   <h3 id="Act1"> Act I. </h3>
+  <img class ="image3" src="/assets/Panel3.png">
   <div id="panel4caption" class="panelcaption">
     <h1 id="panel4text" class="paneltext"><span id="text3span"> Step 2. Mess with the reward, to understand the why</span> </h1>
   </div>
@@ -44,13 +45,16 @@
 
 <div id="panel6" class="story-panel">
   <h3 id="Act1"> Act III. </h3> <br>
-  <%= @first_Story.username %> <br>
-  <%= @first_Story.habit %> <br>
-  <%= @second_Story.username %> <br>
-  <%= @second_Story.habit %> <br>
-  <%= @third_Story.username %> <br>
-  <%= @third_Story.habit %>
- <%= form_for @habit do |f|  %>
+  <ul>
+    <%= @first_Story.username %> <br>
+    <%= @first_Story.habit %> <br>
+    <%= @second_Story.username %> <br>
+    <%= @second_Story.habit %> <br>
+    <%= @third_Story.username %> <br>
+    <%= @third_Story.habit %>
+  </ul>
+  <br>
+  <%= form_for(@habit, remote: true) do  |f|  %>
     <%= f.text_field :username %>
     <%= f.text_field :habit %>
     <%= f.submit "Create" %>
@@ -60,146 +64,3 @@
   </div>
 </div>
 
-
-
-
-<style>
-  h1 {
-    position: absolute;
-    text-align: left;
-  }
-
-  #title {
-    color: white;
-    font: bold 110px/125px Helvetica, Sans-Serif;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-  }
-
-
-#button {
-  padding: 15px 20px;
-  left: 45%;
-  position: absolute;
-  bottom: -35px;
-  background: #34495e;
-  border-radius: 10px;
-  height: 150px;
-  width: 350px;
-  margin-left: 45px;
-  margin-top: 3px;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-  z-index: 10;
-}
-#breakpanel{
-  background-color: black;
-  opacity: .90;
-}
-
-#CartoonGeneral {
-  position: absolute;
-  border-style:solid;
-  border-width:5px;
-  border-radius: 15px;
-  top: 300px;
-  left: 300px;
-  width: 1200px;
-  height: 1400px;
-  background-color: black;
-}
-
-#prologue{
-  position: relative;
-  top: 180px;
-  left: 40px;
-  font-family: italic bold 'SonsieOne';
-  font-size: 300px;
-  text-align: center;
-  color: white;
-}
-#quote {
-  letter-spacing: -1px;
-  padding-left: 40px;
-  color: #d7ceb2;
-  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
-  font: 120px 'BazarMedium';
-  letter-spacing: 10px;
-  text-align: center;
-  background-color: #393D49;
-}
-
-#panel2text{
-  color: white;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
-#textspan {
-  text-align: left;
-  }
-
-#habitloop{
-  position: relative;
-  top: 250px;
-  height: 1500px;
-}
-#panel3text{
-  color: white;
-  letter-spacing: -1px;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
-#text2span {
-  text-align: left;
-  height: 205px;
-  }
-
-#Act1 {
-  position: absolute;
-  top: 250px;
-  left: 100px;
-  font-size: 110px;
-  font-style: italic;
-  color:#3498db;
-}
-
-#panel4text{
-  color: white;
-  font: bold 110px/165px Hel  vetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
-#text3span {
-  text-align: left;
-  }
-
-#panel5text{
-  color: white;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
-#text4span {
-  text-align: left;
-  }
-
-#panel6text{
-  color: white;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#text5span {
-  text-align: left;
-  }
-
-</style>

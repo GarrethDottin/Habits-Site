@@ -9,23 +9,32 @@
   width: 100%;
   height: 1980px;
 }
-
+.image3 {
+  position: relative;
+  bottom: 100px;
+  height: 1500px;
+  width: 1500px;
+  left: 1000px;
+  top: 100px;
+}
 .right-display-box {
   position: absolute;
   border-radius: 25px;
-  text-align: center;
-  top: 80px;
+  top: 100px;
   right: 100px;
   width: 1700px;
   height: 1200px;
+  background-color: #393D49;
   z-index: 10;
 }
 
 h2 {
-    position: absolute;
-    text-align: right;
-    bottom: 200px;
-    width: 100%;
+  position: absolute;
+  text-align: right;
+  letter-spacing: 1px;
+  bottom: 200px;
+  width: 100%;
+  font-size: 70px;
 }
 
 img {
@@ -43,8 +52,7 @@ img {
   height: 2000px;
   position: relative;
   z-index: 5;
-  background-color: #EDE9DC;
-
+  background-color: #527296;
 }
 
 .panelcaption {
