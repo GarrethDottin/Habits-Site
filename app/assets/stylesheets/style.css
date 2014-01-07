@@ -3,6 +3,35 @@
     text-align: left;
   }
 
+#new_user {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  top: 100px;
+}
+
+#user_habit {
+  height: 125px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+input:last-of-type {
+  position: relative;
+  background-color: blue;
+  border-radius: 10px;
+  height: 75px;
+  width: 170px;
+  left: 355px;
+
+}
+
+#user_username {
+  width: 500px;
+  height: 40px;
+  border-radius: 7px;
+}
+
 #title {
   color: white;
   font: bold 110px/125px Helvetica, Sans-Serif;
