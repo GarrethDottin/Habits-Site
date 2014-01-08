@@ -18,6 +18,17 @@
 $(function(){
   var button = $('#button');
   var breakpanel = $('#breakpanel')
+  var $document = $(document);
+
+$document.scroll(function() {
+  if ($document.scrollTop() >= 500) {
+    alert("this is working")
+  } else {
+    alert("this is great")
+  }
+});
     button.click(function() {
      $.scrollTo(breakpanel, 800)});
+
+
 });

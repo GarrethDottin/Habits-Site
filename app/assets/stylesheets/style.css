@@ -5,37 +5,52 @@
 
 #new_user {
   position: relative;
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
-  top: 100px;
+  top: 800px;
 }
 
 #user_habit {
-  height: 125px;
-  width: 500px;
+  height: 220px;
+  width: 800px;
   border-radius: 10px;
+  border-style: solid;
+  border-color: #545454;
+  font-size: 50px;
+  font-color: black;
+  line-height: 50px;
+  border-width: 6px;
 }
+#user_username {
+  width: 800px;
+  height: 60px;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #545454;
+  font-size: 35px;
+  border-width:6px;
+  size: 100px;
+}
+/*input[placeholder] {
+   font-weight: bold;
+}*/
 
 input:last-of-type {
   position: relative;
-  background-color: blue;
+  background-color: #338387;
+  color: #fff;
   border-radius: 10px;
-  height: 75px;
-  width: 170px;
-  left: 355px;
+  height: 125px;
+  width: 300px;
+  left: 530px;
+  font-weight: bold;
 
-}
-
-#user_username {
-  width: 500px;
-  height: 40px;
-  border-radius: 7px;
 }
 
 #title {
   color: white;
   font: bold 110px/125px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
+  background: rgb(0, 0, 0);  fallback color
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
 }
@@ -43,7 +58,7 @@ input:last-of-type {
 #caption {
   color: white;
   font: bold 100px/135px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
+  background: rgb(0, 0, 0);  fallback color
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
 }
@@ -102,9 +117,7 @@ input:last-of-type {
   padding-top: 40px;
   color: white;
   font-size: 100px;
-/*  font: 100px 'Franchise';
-*//*  letter-spacing: 10px;
-*/
+
 }
 
 #panel2text{
@@ -140,6 +153,7 @@ input:last-of-type {
   font-size: 110px;
   font-style: italic;
   color:#3498db;
+  z-index: 10;
 }
 
 #panel4text{
@@ -151,6 +165,7 @@ input:last-of-type {
 #text3span {
   text-align: left;
   }
+
 
 #panel5text{
   color: white;

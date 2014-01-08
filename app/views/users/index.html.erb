@@ -55,8 +55,10 @@
       </ul>
       <br>
       <%= form_for(@habit, remote: true) do |f| %>
-        <%= f.text_field :habit %>
-        <%= f.text_field :username %>
+        <%= f.text_field :habit,
+        :placeholder => "I'm going to run once a week" %>
+        <%= f.text_field :username,
+        :placeholder => "eg ~ Mary L."%>
         <%= f.submit "Create" %>
       <% end %>
       <div id="panel6caption" class="panelcaption">
@@ -65,6 +67,11 @@
     </div>
   </div>
   <div class="sidebar">
+    <h3 id="Prologue" class="sidebaritems">Prologue</h3>
+    <h3 class="sidebaritems">Figure out where you are  <br>Act I. </h3>
+    <h3 class="sidebaritems"> The Reward <br> Act II.</h3>
+    <h3 class="sidebaritems"> Act III. The Trigger </h3>
+    <h3 class="sidebaritems"> The Resolution </h3>
 
   </div>
 </div>

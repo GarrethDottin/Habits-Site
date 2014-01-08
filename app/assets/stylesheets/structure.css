@@ -3,15 +3,27 @@
   margin: 0 auto;
 
 }
+.sidebaritems {
+  text-align: center;
+  margin-top: 1700px;
+  font-size: 45px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
+}
 
+#Prologue {
+  margin-top: 900px;
+}
 .main {
   float: left;
-  width: 75%;
+  width: 80%;
 }
 .sidebar{
   float: right;
-  width: 25%;
+  position: relative;
+  width: 20%;
   height: 10000px;
+  background-color: #C3B59B;
+  opacity: .50;
 }
 .websitetitle {
   position: absolute;
