@@ -21,11 +21,30 @@ $(function(){
   var $document = $(document);
 
 $document.scroll(function() {
-  if ($document.scrollTop() >= 500) {
-    alert("this is working")
-  } else {
-    alert("this is great")
+    if ($document.scrollTop() >= 2300) {
+      $('#sidebar2').css("color", "red")
+      $('#sidebar2a').css("color", "red")
+      $('#sidebar1').css("color","red" )
+      $('#sidebar1').css("color", "red")
+    }
+    else if ($document.scrollTop() >= 4300) {
+      $('#sidebar1').css("color","red" )
+      $('#sidebar1').css("color", "red")
+      $('#sidebar2').css("color", "red")
+      $('#sidebar2a').css("color", "red")
   }
+    else if ($document.scrollTop() >= 6300) {
+      $('#sidebar2').css("color", "red")
+      $('#sidebar2a').css("color", "red")
+      $('#sidebar3').css("color", "red")
+      $('#sidebar3a').css("color", "red")
+  }
+    else if ($document.scrollTop() >= 8300) {
+      $('#sidebar3').css("color", "red")
+      $('#sidebar3a').css("color", "red")
+      $('#sidebar4').css("color", "red")
+      $('#sidebar4a').css("color","red" )
+    }
 });
     button.click(function() {
      $.scrollTo(breakpanel, 800)});
