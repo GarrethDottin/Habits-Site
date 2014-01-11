@@ -99,6 +99,7 @@ input:last-of-type {
   width: 1200px;
   height: 1400px;
   background-color: black;
+  display: none;
 }
 
 
@@ -185,7 +186,82 @@ input:last-of-type {
 
 #text5span {
   text-align: left;
-  }
-#sidebar2 {
+}
+
+.story {
+  height: 75px;
+  position: absolute;
+  background-color:#338387;
+  width: 170px;
+  padding-right: 2px;
+  padding-left: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px black;
+}
+
+#story1{
+  top: 100px;
+  left: 300px;
+  display: none;
+}
+
+#story2 {
+  top: 200px;
+  left: 90px;
+  display: none;
+}
+
+#story3 {
+  top: 600px;
+  left: 300px;
+  display: none;
+}
+
+#story4 {
+  top: 400px;
+  left: 500px;
+    display: none;
+}
+
+#story5 {
+  top: 200px;
+  left: 500px;
+  display: none;
 
 }
+
+#story6 {
+  top: 500px;
+  left: 500px;
+  display: none;
+}
+
+#story7 {
+  top: 600px;
+  left: 200px;
+  display: none;
+}
+
+#story8 {
+  top: 300px;
+  left: 100px;
+  display: none;
+}
+#story9 {
+  top: 500px;
+  left: 400px;
+  display: none;
+}
+
+#story10 {
+  top:350px;
+  left: 200px;
+  display: none;
+}
+
+.name {
+  text-align: right;
+  color:  white;
+}
+
+

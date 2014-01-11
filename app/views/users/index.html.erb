@@ -15,7 +15,7 @@
       <img id="CartoonGeneral" src="/assets/cartoonGeneral.jpg">
       <div id="quotediv">
         <h1 id="quote" class="right-display-box">In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
-         </h1>
+        </h1>
       </div>
       <div id="panel2caption" class = "panelcaption">
         <h1 id="panel2text" class="paneltext"><span id="textspan"> Step 1. Be Honest about the Current State of the Habit </span> </h1>
@@ -30,7 +30,7 @@
     </div>
     <div id="panel4" class="story-panel">
       <img class ="leftImage" src="/assets/Panel3.png">
-       <img class ="rightImage" src="/assets/4a.jpg">
+      <img class ="rightImage" src="/assets/4a.jpg">
       <div id="panel4caption" class="panelcaption">
         <h1 id="panel4text" class="paneltext"><span id="text3span"> Step 2. Mess with the reward, to understand the why</span> </h1>
       </div>
@@ -45,21 +45,22 @@
     </div>
 
     <div id="panel6" class="story-panel">
-      <ul>
-        <%= @first_Story.username %> <br>
-        <%= @first_Story.habit %> <br>
-        <%= @second_Story.username %> <br>
-        <%= @second_Story.habit %> <br>
-        <%= @third_Story.username %> <br>
-        <%= @third_Story.habit %>
-      </ul>
-      <br>
+      <div id ="panel7">
+      <script id="attempt" type="text/x-handlebars-template">
+        {{#users}}
+        <div id ="story{{id}}" class="story">
+          <p id ={{storyid}} > {{habit}}</p>
+          <p id = {{storyid2}} class="name"> {{name}} </p>
+        </div>
+        {{/users}}
+      </script>
+      </div>
       <%= form_for(@habit, remote: true) do |f| %>
         <%= f.text_field :habit,
-        :placeholder => "I'm going to run once a week" %>
-        <%= f.text_field :username,
-        :placeholder => "eg ~ Mary L."%>
-        <%= f.submit "Create" %>
+      :placeholder => "I'm going to run once a week" %>
+      <%= f.text_field :username,
+      :placeholder => "eg ~ Mary L."%>
+      <%= f.submit "Create" %>
       <% end %>
       <div id="panel6caption" class="panelcaption">
         <h1 id="panel6text" class="paneltext"><span id="text5span"> Step 4. Put your plan into action</span> </h1>
@@ -75,4 +76,3 @@
 
   </div>
 </div>
-
