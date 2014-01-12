@@ -2,6 +2,14 @@
     position: absolute;
     text-align: left;
   }
+
+#quote {
+  padding-left: 40px;
+  padding-top: 40px;
+  color: white;
+  font-size: 30px;
+}
+
 #caption {
   color: white;
   font: bold 25px/20px Helvetica, Sans-Serif;
@@ -60,19 +68,19 @@ input:last-of-type {
 
 #button {
   padding: 15px 20px;
-  left: 45%;
+  left: 35%;
   position: absolute;
   bottom: -35px;
   background: #338387;
   border-radius: 10px;
-  height: 150px;
-  width: 350px;
+  height: 65px;
+  width: 150px;
   margin-left: 45px;
   margin-top: 3px;
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
   -webkit-transition: all .3s ease;
@@ -85,56 +93,42 @@ input:last-of-type {
   opacity: .90;
 }
 
-#CartoonGeneral {
-  position: absolute;
-  border-style:solid;
-  border-width:5px;
-  border-radius: 15px;
-  top: 100px;
-  left: 300px;
-  width: 1200px;
-  height: 1400px;
-  background-color: black;
-}
-
-
-
 #prologue{
   position: relative;
-  top: 180px;
-  left: 40px;
+  right: 20px;
   font-family: italic bold 'SonsieOne';
-  font-size: 300px;
+  font-size: 90px;
   text-align: center;
   color: white;
 }
-#quote {
-  padding-left: 40px;
-  padding-top: 40px;
-  color: white;
-  font-size: 100px;
 
+#CartoonGeneral {
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 8px;
+  top: 50px;
+  left: 50px;
+  width: 350px;
+  height: 400px;
+  background-color: black;
 }
 
 #panel2text{
   color: white;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
+  font: bold 50px/70px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
+}
 }
 #textspan {
   text-align: left;
   }
 
-#habitloop{
-  position: relative;
-  top: 250px;
-  height: 1500px;
-}
 #panel3text{
   color: white;
-  letter-spacing: -1px;
-  background: rgb(0, 0, 0); /* fallback color */
+  font: bold 50px/65px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
 }
 #text2span {

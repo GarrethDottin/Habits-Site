@@ -24,10 +24,12 @@ h2 {
   font-size: 45px;
   text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
 }
-
-#Prologue {
-  margin-top: 900px;
+.titlepanel {
+  position: relative;
+  top: 80px;
 }
+
+
 .main {
   float: left;
   width: 80%;
@@ -48,7 +50,7 @@ h2 {
 .panel {
   position: relative;
   width: 100%;
-  height: 1980px;
+  height: 490px;
 }
 .leftImage {
   position: relative;
@@ -70,32 +72,37 @@ h2 {
 .right-display-box {
   position: absolute;
   border-radius: 25px;
-  top: 100px;
-  right: 100px;
-  width: 1700px;
-  height: 1200px;
+  top: 50px;
+  right: 00px;
+  width: 400px;
+  height: 300px;
   background-color: #393D49;
   z-index: 10;
 }
 .prologue-panel {
   width: 100%;
-  height: 500px;
+  height: 150px;
 }
 
 .story-panel {
   width: 100%;
-  height: 2000px;
+  height: 700px;
   position: relative;
   z-index: 5;
   background-color: #527296;
+}
+
+#habitloop{
+  position: relative;
+  top: 0px;
+  height: 495px;
 }
 
 .panelcaption {
   bottom: 15px;
   position: absolute;
   width: 100%;
-  height: 250px;
-  z-index: 10;
+  height: 200px;
 }
 
 .paneltext {
@@ -106,13 +113,10 @@ h2 {
   text-align: center;
   width: 100%;
   height: 240px;
-
 }
 
 .titlepanel {
   position: relative;
-  top: 180px;
-  left: 40px;
-  text-align: center;
+  top: 80px;
 }
 
