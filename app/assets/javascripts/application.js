@@ -53,6 +53,25 @@ $(function(){
   var html = template(userStories);
   $('#panel7').html(html);
 
+
+  data = {tests: [{name: "Allison", lastname: false}, {name: "Jake", lastname: false}] }
+  Handlebars.registerHelper("testfunction", function(block) {
+      if (this.lastname == true) {
+        return block(this)
+      }
+
+      else {
+        return block.inverse(this)
+      }
+
+  })
+
+
+  var source1 = $("#attempt2").html();
+  var template = Handlebars.compile(source1)
+  var html1 = template(data);
+  $('#panel8').html(html1)
+
 });
 $(window).scroll(function() {
   if ($(document).scrollTop() >= 2000) {
