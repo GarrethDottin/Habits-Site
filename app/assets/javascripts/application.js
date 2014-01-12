@@ -66,5 +66,4 @@ $(window).scroll(function() {
       }
     }, 1000)
   }
-
 });
