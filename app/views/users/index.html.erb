@@ -37,7 +37,7 @@
     </div>
 
     <div id="panel5" class="story-panel">
-      <h3 id="Act1"> Act II. </h3>
+      <img class src="/assets/5b.jpg">
       <div id="panel5caption" class="panelcaption">
         <h1 id="panel5text" class="paneltext"><span id="text4span"> Step 3. Find one Cue you think is triggering the behavior</span>
         </h1>
@@ -55,12 +55,9 @@
         {{/users}}
       </script>
       </div>
-
-      <div id ="panel8">
-      </div>
       <%= form_for(@habit, remote: true) do |f| %>
         <%= f.text_field :habit,
-      :placeholder => "I'm going to run once a week" %>
+      :placeholder => " eg ~I'm going to run once a week" %>
       <%= f.text_field :username,
       :placeholder => "eg ~ Mary L."%>
       <%= f.submit "Create" %>

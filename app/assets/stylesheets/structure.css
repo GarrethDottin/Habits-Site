@@ -54,19 +54,18 @@ h2 {
 }
 .leftImage {
   position: relative;
-  bottom: 100px;
-  height: 1500px;
-  width: 1500px;
-  left: 300px;
-  top: 100px;
+  height: 300px;
+  width: 300px;
+  left: 50px;
+  top: 50px;
 }
 
 .rightImage {
   position: relative;
-  height: 900px;
-
-  width: 1400px;
-  left: 500px;
+  height: 300px;
+  width: 400px;
+  top: 50px;
+  left: 200px;
   border-radius: 10px;
 }
 .right-display-box {
@@ -108,7 +107,7 @@ h2 {
 .paneltext {
   position: relative;
   letter-spacing: -1px;
-  font: bold 110px/125px Helvetica, Sans-Serif;
+  font: bold 50px/60px Helvetica, Sans-Serif;
   padding:15px;
   text-align: center;
   width: 100%;
@@ -118,5 +117,11 @@ h2 {
 .titlepanel {
   position: relative;
   top: 80px;
+}
+
+#panel6caption {
+  bottom: 40px;
+  height: 90px;
+
 }
 
