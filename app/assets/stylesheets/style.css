@@ -6,7 +6,7 @@
 #quote {
   padding-left: 40px;
   padding-top: 40px;
-  color: white;
+  color: #3498db;
   font-size: 30px;
 }
 
@@ -16,9 +16,6 @@
   background: rgb(0, 0, 0);
   padding: 4px;
 }
-/*input[placeholder] {
-   font-weight: bold;
-}*/
 
 #title {
   color: white;
@@ -58,17 +55,17 @@
   position: relative;
   right: 20px;
   font-family: italic bold 'SonsieOne';
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
   color: white;
 }
 
 #CartoonGeneral {
-  position: absolute;
+  position: relative;
   border-style: solid;
-  border-width: 5px;
-  border-radius: 8px;
-  top: 50px;
+  border-width: 1px;
+  border-radius: 4px;
+  top: 10px;
   left: 50px;
   width: 350px;
   height: 400px;
@@ -93,7 +90,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 #panel3caption {
-  bottom: 10px;
+  bottom: 35px;
   height: 240px;
 
 }
@@ -120,15 +117,48 @@
 
 #panel5caption {
   bottom: 45px;
-
 }
 
 #panel6caption {
   height: 150px;
   bottom: 14px
+}
+
+.cartoonbox {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  width: 95%;
+  top: 50px;
+  margin: auto;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
+}
+
+#leftbox {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  width: 450px;
+  top: 25px;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
 
 }
 
+#rightbox {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  width: 490px;
+  top: 25px;
+  left: 480px;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
+}
 #text3span {
   text-align: left;
   }
@@ -218,27 +248,27 @@ input:last-of-type {
 }
 
 #story3 {
-  top: 600px;
-  left: 300px;
+  top: 500px;
+  left: 400px;
   display: none;
 }
 
 #story4 {
-  top: 400px;
-  left: 500px;
-    display: none;
+  top: 200px;
+  left: 740px;
+  display: none;
 }
 
 #story5 {
-  top: 200px;
-  left: 500px;
+  top: 300px;
+  left: 690px;
   display: none;
 
 }
 
 #story6 {
   top: 500px;
-  left: 500px;
+  left: 730px;
   display: none;
 }
 
@@ -254,8 +284,8 @@ input:last-of-type {
   display: none;
 }
 #story9 {
-  top: 500px;
-  left: 400px;
+  top: 450px;
+  left: 185px;
   display: none;
 }
 

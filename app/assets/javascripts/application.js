@@ -38,19 +38,23 @@ $(function(){
 });
 $(window).scroll(function() {
   num = $(document).scrollTop()
-  if (num >= 2000 && num <= 4200) {
+  if (num >= 560 && num <= 1200) {
     $('.sidebaritems:nth-child(1)').css('color', 'red');
   }
-  if (num >= 4200 && num <= 6367) {
+  else {
+    $('.sidebaritems:nth-child(1)').css('color', 'initial');
+
+  }
+  if (num >= 1112 && num <= 2072) {
     $('.sidebaritems:nth-child(2)').css('color', 'red');
   }
-  if (num >= 6367 && num <= 8527) {
+  if (num >= 2072 && num <= 8527) {
     $('.sidebaritems:nth-child(3)').css('color', 'red');
   }
-  if (num >= 8527 && num <= 10000) {
+  if (num >= 2730 && num <= 10000) {
     $('.sidebaritems:nth-child(4)').css('color', 'red');
   }
-  if (num >= 10000) {
+  if (num >= 3510) {
     $('.sidebaritems:last-child').css('color', 'red')
     var storyNumber = 1
     var Showitems =  setInterval(function() {
