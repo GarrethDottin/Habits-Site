@@ -273,8 +273,7 @@ input:last-of-type {
 }
 
 #story7 {
-  top: 600px;
-  left: 200px;
+  left: 100px;
   display: none;
 }
 
@@ -290,10 +289,12 @@ input:last-of-type {
 }
 
 #story10 {
-  top:350px;
-  left: 200px;
+  top: 50px;
+  left: 683px;
   display: none;
 }
+
+
 
 .name {
   text-align: right;

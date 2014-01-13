@@ -17,7 +17,9 @@
 
 var userStories = {
     "users": [{name: "Allison J", habit: 'Go Running three times a week', id: 1, storyid: "a", storyid2: "b"},{name: "James H", habit: 'Eat Salads everyday', id: 2, storyid: "a", storyid2: "b"}, {name: "Kevin M", habit:'Do more Public Speaking', id: 3, storyid: "a", storyid2: "b"}, {name:"Kevin M", habit: 'Do more Public Speaking', id: 4, storyid: "a", storyid2: "b"}, {name:"Regina T", habit:'Get into work earlier every day', id: 5, storyid: "a", storyid2: "b"}, {name: "Peter R", habit: 'Apply to 2 jobs a week', id: 6, storyid: "a", storyid2: "b"}, {name: "Molly M", habit: "Lose 5 pounds", id: 7, storyid: "a", storyid2: "b"}, {
-      name: "Jessie L", habit: "Spend more time with my kids", id: 8, storyid: "a", storyid2: "b" }, { name: "Vince M", habit: "Start eating in more often", id: 9, storyid: "a", storyid2: "b"}
+      name: "Jessie L", habit: "Spend more time with my kids", id: 8, storyid: "a", storyid2: "b" }, { name: "Vince M", habit: "Start eating in more often", id: 9, storyid: "a", storyid2: "b"}, {
+        name: "Beth P", habit: "Practice writing every day", id: 10, storyid:"a", storyid2: "b"
+      }
     ],
     source1: $('#attempt').html()
     }
