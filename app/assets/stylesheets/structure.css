@@ -18,12 +18,6 @@ h2 {
   margin: 0 auto;
 
 }
-.sidebaritems {
-  text-align: center;
-  margin-top: 1700px;
-  font-size: 45px;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
-}
 .titlepanel {
   position: relative;
   top: 80px;
@@ -33,14 +27,6 @@ h2 {
 .main {
   float: left;
   width: 80%;
-}
-.sidebar{
-  float: right;
-  position: relative;
-  width: 20%;
-  height: 10000px;
-  background-color: #C3B59B;
-  opacity: .50;
 }
 .websitetitle {
   position: absolute;
@@ -102,6 +88,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 200px;
+  z-index: 8;
 }
 
 .paneltext {
@@ -110,8 +97,8 @@ h2 {
   font: bold 50px/60px Helvetica, Sans-Serif;
   padding:15px;
   text-align: center;
-  width: 100%;
-  height: 240px;
+  width: 97%;
+  top: 34px;
 }
 
 .titlepanel {
@@ -122,6 +109,35 @@ h2 {
 #panel6caption {
   bottom: 40px;
   height: 90px;
-
+}
+.sidebar{
+  float: right;
+  position: relative;
+  width: 20%;
+  height: 3500px;
+  background-color: #C3B59B;
+  opacity: .50;
 }
 
+.sidebaritems {
+  position: relative;
+  top: -200px ;
+  text-align: center;
+  margin-top: 500px;
+  font-size: 45px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
+}
+
+#sidebar3 {
+  position: relative;
+  top: -100px ;
+}
+
+#sidebar4 {
+  position: relative;
+  top: 50px;
+}
+#sidebar5 {
+  position: relative;
+  top: 200px;
+}

@@ -92,6 +92,11 @@
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
 }
+#panel3caption {
+  bottom: 10px;
+  height: 240px;
+
+}
 #text2span {
   text-align: left;
   height: 205px;
@@ -111,6 +116,17 @@
   color: white;
   font: bold 50px/70px Hel  vetica, Sans-Serif;
   background: rgba(0, 0, 0, 0.7);
+}
+
+#panel5caption {
+  bottom: 45px;
+
+}
+
+#panel6caption {
+  height: 150px;
+  bottom: 14px
+
 }
 
 #text3span {
