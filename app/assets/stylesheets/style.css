@@ -3,80 +3,42 @@
     text-align: left;
   }
 
-#new_user {
-  position: relative;
-  width: 800px;
-  margin: 0 auto;
-  top: 800px;
-}
-
-#user_habit {
-  height: 220px;
-  width: 800px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #545454;
-  font-size: 50px;
-  font-color: black;
-  line-height: 50px;
-  border-width: 6px;
-}
-#user_username {
-  width: 800px;
-  height: 60px;
-  border-radius: 7px;
-  border-style: solid;
-  border-color: #545454;
-  font-size: 35px;
-  border-width:6px;
-  size: 100px;
-}
-/*input[placeholder] {
-   font-weight: bold;
-}*/
-
-input:last-of-type {
-  position: relative;
-  background-color: #338387;
-  color: #fff;
-  border-radius: 10px;
-  height: 125px;
-  width: 300px;
-  left: 530px;
-  font-weight: bold;
-
-}
-
-#title {
-  color: white;
-  font: bold 110px/125px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0);  fallback color
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+#quote {
+  padding-left: 40px;
+  padding-top: 40px;
+  color: #3498db;
+  font-size: 30px;
 }
 
 #caption {
   color: white;
-  font: bold 100px/135px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0);  fallback color
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+  font: bold 25px/20px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
+  padding: 4px;
 }
+
+#title {
+  color: white;
+  font: bold 30px/40px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+}
+
 #button {
   padding: 15px 20px;
-  left: 45%;
+  left: 35%;
   position: absolute;
   bottom: -35px;
   background: #338387;
   border-radius: 10px;
-  height: 150px;
-  width: 350px;
+  height: 65px;
+  width: 150px;
   margin-left: 45px;
   margin-top: 3px;
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
   -webkit-transition: all .3s ease;
@@ -89,58 +51,48 @@ input:last-of-type {
   opacity: .90;
 }
 
-#CartoonGeneral {
-  position: absolute;
-  border-style:solid;
-  border-width:5px;
-  border-radius: 15px;
-  top: 100px;
-  left: 300px;
-  width: 1200px;
-  height: 1400px;
-  background-color: black;
-  display: none;
-}
-
-
-
 #prologue{
   position: relative;
-  top: 180px;
-  left: 40px;
+  right: 20px;
   font-family: italic bold 'SonsieOne';
-  font-size: 300px;
+  font-size: 70px;
   text-align: center;
   color: white;
 }
-#quote {
-  padding-left: 40px;
-  padding-top: 40px;
-  color: white;
-  font-size: 100px;
 
+#CartoonGeneral {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  top: 10px;
+  left: 50px;
+  width: 350px;
+  height: 400px;
+  background-color: black;
 }
 
 #panel2text{
   color: white;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
+  font: bold 50px/70px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
+}
 }
 #textspan {
   text-align: left;
   }
 
-#habitloop{
-  position: relative;
-  top: 250px;
-  height: 1500px;
-}
 #panel3text{
   color: white;
-  letter-spacing: -1px;
-  background: rgb(0, 0, 0); /* fallback color */
+  font: bold 50px/65px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
+}
+#panel3caption {
+  bottom: 35px;
+  height: 240px;
+
 }
 #text2span {
   text-align: left;
@@ -159,10 +111,54 @@ input:last-of-type {
 
 #panel4text{
   color: white;
-  font: bold 110px/165px Hel  vetica, Sans-Serif;
+  font: bold 50px/70px Hel  vetica, Sans-Serif;
   background: rgba(0, 0, 0, 0.7);
 }
 
+#panel5caption {
+  bottom: 45px;
+}
+
+#panel6caption {
+  height: 150px;
+  bottom: 14px
+}
+
+.cartoonbox {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  width: 95%;
+  top: 50px;
+  margin: auto;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
+}
+
+#leftbox {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  width: 450px;
+  top: 25px;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
+
+}
+
+#rightbox {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  width: 490px;
+  top: 25px;
+  left: 480px;
+  height: 450px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 2px black;
+}
 #text3span {
   text-align: left;
   }
@@ -176,13 +172,6 @@ input:last-of-type {
 #text4span {
   text-align: left;
   }
-
-#panel6text{
-  color: white;
-  font: bold 110px/165px Helvetica, Sans-Serif;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-}
 
 #text5span {
   text-align: left;
@@ -198,6 +187,53 @@ input:last-of-type {
   border-radius: 5px;
   box-shadow: 2px 2px 1px black;
 }
+#user_habit {
+  height: 90px;
+  width: 300px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #545454;
+  font-size: 18px;
+  font-color: black;
+  line-height: 15px;
+  border-width: 6px;
+}
+
+#user_username {
+  width: 300px;
+  height: 60px;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #545454;
+  font-size: 18px;
+  border-width:6px;
+  size: 100px;
+}
+
+#new_user {
+  position: relative;
+  top: 200px;
+  width: 100px;
+  right: 100px;
+  margin: 0 auto;
+}
+input:last-of-type {
+  position: relative;
+  background-color: #338387;
+  color: #fff;
+  border-radius: 5px;
+  height: 55px;
+  width: 100px;
+  left: 220px;
+  font-weight: bold;
+}
+#panel6text{
+  color: white;
+  font: bold 50px/70px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  height: 90px;
+}
 
 #story1{
   top: 100px;
@@ -212,33 +248,32 @@ input:last-of-type {
 }
 
 #story3 {
-  top: 600px;
-  left: 300px;
+  top: 500px;
+  left: 400px;
   display: none;
 }
 
 #story4 {
-  top: 400px;
-  left: 500px;
-    display: none;
+  top: 200px;
+  left: 740px;
+  display: none;
 }
 
 #story5 {
-  top: 200px;
-  left: 500px;
+  top: 300px;
+  left: 690px;
   display: none;
 
 }
 
 #story6 {
   top: 500px;
-  left: 500px;
+  left: 730px;
   display: none;
 }
 
 #story7 {
-  top: 600px;
-  left: 200px;
+  left: 100px;
   display: none;
 }
 
@@ -248,16 +283,18 @@ input:last-of-type {
   display: none;
 }
 #story9 {
-  top: 500px;
-  left: 400px;
+  top: 450px;
+  left: 185px;
   display: none;
 }
 
 #story10 {
-  top:350px;
-  left: 200px;
+  top: 50px;
+  left: 683px;
   display: none;
 }
+
+
 
 .name {
   text-align: right;

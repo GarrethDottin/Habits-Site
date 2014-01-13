@@ -12,12 +12,16 @@
 <div class="wrapper">
   <div class="main">
     <div id="panel2" class="story-panel">
-      <img id="CartoonGeneral" src="/assets/cartoonGeneral.jpg">
-      <div id="quotediv">
-        <h1 id="quote" class="right-display-box">In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square
-        </h1>
+      <div class ="cartoonbox">
+        <img id="CartoonGeneral" src="/assets/cartoonGeneral1.jpg">
+        <div id="quotediv">
+          <h1 id="quote" class="right-display-box">In the early days of the Iraq war,  when violence was sparking almost on a daily basis. One Major noticed that much of the violence started when the people congregated in the square. He saw a habit.
+          </h1>
+        </div>
+        <div id="pictitle"> <h1 id="Major-title"> The Major </h1>
+        </div>
       </div>
-      <div id="panel2caption" class = "panelcaption">
+      <div class = "panelcaption">
         <h1 id="panel2text" class="paneltext"><span id="textspan"> Step 1. Be Honest about the Current State of the Habit </span> </h1>
       </div>
     </div>
@@ -29,15 +33,19 @@
       </div>
     </div>
     <div id="panel4" class="story-panel">
-      <img class ="leftImage" src="/assets/Panel3.png">
-      <img class ="rightImage" src="/assets/4a.jpg">
+      <div id ="leftbox">
+        <img class ="leftImage" src="/assets/Panel3.png">
+      </div>
+      <div id ="rightbox">
+        <img class ="rightImage" src="/assets/4a.jpg">
+      </div>
       <div id="panel4caption" class="panelcaption">
         <h1 id="panel4text" class="paneltext"><span id="text3span"> Step 2. Mess with the reward, to understand the why</span> </h1>
       </div>
     </div>
 
     <div id="panel5" class="story-panel">
-      <h3 id="Act1"> Act II. </h3>
+      <img class src="/assets/5b.jpg">
       <div id="panel5caption" class="panelcaption">
         <h1 id="panel5text" class="paneltext"><span id="text4span"> Step 3. Find one Cue you think is triggering the behavior</span>
         </h1>
@@ -57,7 +65,7 @@
       </div>
       <%= form_for(@habit, remote: true) do |f| %>
         <%= f.text_field :habit,
-      :placeholder => "I'm going to run once a week" %>
+      :placeholder => " eg ~I'm going to run once a week" %>
       <%= f.text_field :username,
       :placeholder => "eg ~ Mary L."%>
       <%= f.submit "Create" %>
@@ -68,11 +76,11 @@
     </div>
   </div>
   <div class="sidebar">
-    <h3 id="Prologue" class="sidebaritems">Prologue</h3>
+    <h3 id="sidebar1" class="sidebaritems">Prologue</h3>
     <h3 class="sidebaritems" id="sidebar2">Figure out where you are  <br>Act I. </h3>
-    <h3 class="sidebaritems" id="sidebar2a"> The Reward <br> Act II.</h3>
-    <h3 class="sidebaritems"> Act III. The Trigger </h3>
-    <h3 class="sidebaritems"> The Resolution </h3>
+    <h3 class="sidebaritems" id="sidebar3"> The Reward <br> Act II.</h3>
+    <h3 class="sidebaritems" id="sidebar4"> Act III. The Trigger </h3>
+    <h3 class="sidebaritems" id="sidebar5"> The Resolution </h3>
 
   </div>
 </div>

@@ -1,29 +1,32 @@
+
+img {
+  width: 100%;
+  height: 500px;
+}
+
+h2 {
+  position: absolute;
+  text-align: right;
+  letter-spacing: 1px;
+  bottom: 200px;
+  width: 100%;
+  top: 400px;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
 
 }
-.sidebaritems {
-  text-align: center;
-  margin-top: 1700px;
-  font-size: 45px;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
+.titlepanel {
+  position: relative;
+  top: 80px;
 }
 
-#Prologue {
-  margin-top: 900px;
-}
+
 .main {
   float: left;
   width: 80%;
-}
-.sidebar{
-  float: right;
-  position: relative;
-  width: 20%;
-  height: 10000px;
-  background-color: #C3B59B;
-  opacity: .50;
 }
 .websitetitle {
   position: absolute;
@@ -33,86 +36,113 @@
 .panel {
   position: relative;
   width: 100%;
-  height: 1980px;
+  height: 490px;
 }
 .leftImage {
   position: relative;
-  bottom: 100px;
-  height: 1500px;
-  width: 1500px;
-  left: 300px;
-  top: 100px;
+  height: 400px;
+  top: 15px;
+  left: 15px;
+  border-radius: 2px;
+  width: 420px;
+}
+#pictitle {
+  position: relative;
+  left: 140px;
 }
 
 .rightImage {
   position: relative;
-  height: 900px;
-
-  width: 1400px;
-  left: 500px;
-  border-radius: 10px;
+  height: 400px;
+  width: 460px;
+  top: 15px;
+  left: 15px;
+  border-radius: 5px;
 }
 .right-display-box {
   position: absolute;
   border-radius: 25px;
-  top: 100px;
-  right: 100px;
-  width: 1700px;
-  height: 1200px;
-  background-color: #393D49;
+  top: -10px;
+  right: 50px;
+  width: 375px;
+  height: 400px;
   z-index: 10;
 }
-
-h2 {
-  position: absolute;
-  text-align: right;
-  letter-spacing: 1px;
-  bottom: 200px;
-  width: 100%;
-  font-size: 70px;
-}
-
-img {
-    width: 100%;
-    height: 2000px;
-  }
-
 .prologue-panel {
   width: 100%;
-  height: 500px;
+  height: 130px;
 }
+
 
 .story-panel {
   width: 100%;
-  height: 2000px;
+  height: 700px;
   position: relative;
   z-index: 5;
   background-color: #527296;
+}
+
+#habitloop{
+  position: relative;
+  top: 0px;
+  height: 470px;
 }
 
 .panelcaption {
   bottom: 15px;
   position: absolute;
   width: 100%;
-  height: 250px;
-  z-index: 10;
+  height: 200px;
+  z-index: 8;
 }
 
 .paneltext {
   position: relative;
   letter-spacing: -1px;
-  font: bold 110px/125px Helvetica, Sans-Serif;
+  font: bold 50px/60px Helvetica, Sans-Serif;
   padding:15px;
   text-align: center;
-  width: 100%;
-  height: 240px;
-
+  width: 97%;
+  top: 34px;
 }
 
 .titlepanel {
   position: relative;
-  top: 180px;
-  left: 40px;
-  text-align: center;
+  top: 80px;
 }
 
+#panel6caption {
+  bottom: 40px;
+  height: 90px;
+}
+.sidebar{
+  float: right;
+  position: relative;
+  width: 20%;
+  height: 3500px;
+  background-color: #C3B59B;
+  opacity: .50;
+}
+
+.sidebaritems {
+  position: relative;
+  top: -200px ;
+  text-align: center;
+  margin-top: 500px;
+  font-size: 45px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
+}
+
+#sidebar3 {
+  position: relative;
+  top: -100px ;
+}
+
+#sidebar4 {
+  position: relative;
+  top: 50px;
+}
+#sidebar5 {
+  position: relative;
+  top: 200px;
+}
