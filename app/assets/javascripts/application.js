@@ -25,6 +25,7 @@ var userStories = {
     }
 
 $(function(){
+
 //################ User Clicks Story ########################
   var button = $('#button');
   var breakpanel = $('#panel2')
