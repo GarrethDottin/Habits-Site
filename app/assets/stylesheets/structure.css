@@ -84,8 +84,11 @@ h2 {
 
 #habitloop{
   position: relative;
-  top: 0px;
-  height: 470px;
+  top: 10px;
+  height: 440px;
+  width: 750px;
+  left: 15px;
+  box-shadow: 2px 2px 2px black;
 }
 
 .panelcaption {
