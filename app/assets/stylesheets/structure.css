@@ -51,6 +51,28 @@ h2 {
   left: 140px;
 }
 
+.btn.btn-default {
+  border-radius: 25px;
+}
+
+#button1 {
+  position: relative;
+  top: 110px;
+  right: 610px;
+}
+
+#button2 {
+  position: relative;
+  bottom: 260px;
+  left: 350px;
+}
+#button3 {
+  position: relative;
+  bottom: 125px;
+  left: 535px;
+}
+
+
 .rightImage {
   position: relative;
   height: 425px;
